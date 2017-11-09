@@ -18,20 +18,35 @@ class QontoClient
         res = RestClient.get(@url + "/organizations/#{slug}",
                        {"Authorization" => "#{slug}:#{secret}"}
         )
-        return "Erreur : #{res.status}" if res.code.to_i != 200
+        status = res.code
+        JSON.parse(res.body)
+    end
+
+    def transactions(slug_bank_account, iban)
+        res = RestClient.get(url + "/transaction?slug=#{slug_bank_account}&iban=#{iban}",
+                             {"Authorization" => "#{slug}:#{secret}"}
+        )
+
+        puts res
+        status = res.code
         JSON.parse(res.body)
     end
 
     def iban
-        organizations["bank_accounts"][0]["iban"]
+        organizations["organization"]["bank_accounts"][0]["iban"]
     end
 
     def slug_bank_account
-        organizations["bank_accounts"][0]["slug"]
+        organizations["organization"]["bank_accounts"][0]["slug"]
     end
 
 end
 
 client = QontoClient.new('qonto-test-9312', 'b5e1cdfc34b0')
-orga = client.organizations
-puts "Votre balance est de #{orga["organization"]["bank_accounts"][0]["balance"]}"
+
+slug = client.slug_bank_account
+iban = client.iban
+
+puts client.transactions(slug, iban)
+
+meta = client.transactions(slug, iban)
