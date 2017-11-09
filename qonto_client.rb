@@ -43,7 +43,7 @@ class QontoClient
 
         full_transactions << call_transaction["transactions"]
 
-        if (full_transactions["meta"]["total_count"]).to_i == 100
+        if full_transactions["meta"]["total_count"].to_i == 100
             full_transactions << all_transactions(full_transactions, next_page: transacs["meta"]["next_page"])
         end
 
