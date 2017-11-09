@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3be67189-fc91-45f1-8675-272ff006d48d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qonto_client.rb" afterPath="$PROJECT_DIR$/qonto_client.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="qonto_client.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qonto_client.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+            <state relative-caret-position="675">
+              <caret line="45" column="58" lean-forward="false" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -167,12 +166,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510242071137</updated>
-      <workItem from="1510242073561" duration="2569000" />
+      <workItem from="1510242073561" duration="4075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2569000" />
+    <option name="totallyTimeSpent" value="4075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1137" extended-state="0" />
@@ -218,8 +217,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qonto_client.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+        <state relative-caret-position="675">
+          <caret line="45" column="58" lean-forward="false" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
           <folding />
         </state>
       </provider>
