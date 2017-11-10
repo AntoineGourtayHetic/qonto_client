@@ -47,7 +47,7 @@ class QontoClient
             full_transactions << all_transactions(full_transactions, next_page: transacs["meta"]["next_page"])
         end
 
-      all_transactions
+      all_transactions(full_transactions)
 
     end
 
